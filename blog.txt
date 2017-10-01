@@ -1,0 +1,41 @@
+Using sqlite with ionic framework v1
+
+SQLite is the most powerful and commonly used persistent storage along with any android mobile app, be it a native android app or a hybrid one like ionic app.
+
+This blog post will guide you through how to use the sqlite databse with your ionic app.
+
+Setup
+
+1 . Start a ionic project
+    ionic start myproject --type ionic1
+
+2. INstall sqlite-cordova plugin
+    https://github.com/litehelpers/Cordova-sqlite-storage
+    cordova plugin add cordova-sqlite-storage --save
+    Now this plugin gives you the power to talk to the native SQLite liraries of your mobile OS
+    We need to enhance the power of this plugin by adding some commonly used methods in an angular factory
+
+    createDB
+    query
+    fetchMany
+    fetch
+    getAll
+    getById
+    getBulkById
+    add
+    addBulk
+    update
+    deleteById
+    addOrUpdate
+    getByColumn
+    getBulkByColum
+
+    Now these are almost all the operations we need to perform on our db
+    CHROME SUPPORT : There is no apis available in chrome browser to use sqlite db. But ionic development is often done on chrome browser also,
+                      To add support for chrome browser all we need to do is add a fallback to websql if cordova sqlite plugin is not available.
+                     All other methods work seemlessly on both android and chrome after this fallback is handled   
+
+
+
+3. Now another important thing might be to pre bundle the database with your app and be able to use it when the app is being used 
+

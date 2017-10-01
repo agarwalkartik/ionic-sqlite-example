@@ -1,0 +1,20 @@
+{
+  "name": "ionic-sqlite-example",
+  "version": "1.1.1",
+  "description": "ionic-sqlite-example: An Ionic project",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-splashscreen"
+  ],
+  "cordovaPlatforms": []
+}
